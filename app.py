@@ -29,7 +29,7 @@ df = ms.interpolate(ts, POINT).fetch()
 # df --> power bi 做分析 ( df to_csv  --> import power bi)
 
 # 1. 匯出成 CSV
-df.to_csv('dallas_weather.csv', encoding='utf-8-sig')
+df.to_csv('./weather tc.csv', index=False)
 print("----- 已匯出至 dallas_weather.csv -----")
 
 
