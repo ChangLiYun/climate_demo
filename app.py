@@ -9,7 +9,7 @@ import meteostat as ms
 """
 #座標
 POINT2 = ms.Point(50.1155, 8.6842, 113)  # Try with your location
-POINT = ms.Point(26.050336646717362, 119.33699261643062)
+POINT = ms.Point(24.160887904904108, 120.65667192896451)
 #時間
 START = date(2025, 1, 1)
 END = date(2025, 12, 31)
@@ -31,7 +31,10 @@ df = ms.interpolate(ts, POINT).fetch()
 # 1. 匯出成 CSV
 df.to_csv('./weather tc.csv', index=False)
 print("----- 已匯出至 dallas_weather.csv -----")
-
+'''
+./weather tc.csv
+「./」 意思：「把檔案存在跟這份 Python 程式碼同一個資料夾下」。
+'''
 
 #print(df)
 # Plot line chart including average, minimum and maximum temperature
